@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(60, 60, 60);
+    font-weight: bold;     
+    color: white;
+}
+
+#results-table td, #results-table th {
+    border-right: 1px solid grey; 
+    text-align: left;
+}
+
+#results-table th:nth-child(1), #results-table td:nth-child(1) {
+    width: 250px; 
+}
+
+#results-table th:nth-child(2), #results-table td:nth-child(2) {
+    width: 100px; 
+}
+
+#results-table th:nth-child(3), #results-table td:nth-child(3) {
+    width: 100px; 
+}
+
+#results-table th:nth-child(4), #results-table td:nth-child(4) {
+    width: 100px; 
+}
+
+#results-table {
+    border: 1px solid grey;
+}
+
+#results-table td, #results-table th {
+    border-right: 1px solid grey; 
+}
+
+#results-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+#results-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    padding: 0px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.form-container td {
+    border: 1px solid grey;
+}
+
+.form-background-white {
+    background-color: white; 
+}
+
+.parameters {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.parameters label {
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.parameters input[type="text"] {
+    width: 90px;
+    height: 20px;
+}
+
+.secondary-label {
+    font-size: 12px;
+    margin-left: 0px;
+    align-self: flex-start;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.radio-group {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    margin: 10px 0px;
+    padding: 2px 10px;
+}
+
+input[type="radio"] {
+    margin: 0px;
+    padding: 0px;
+}

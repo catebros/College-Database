@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="colleges.js" defer></script>
+<link rel="stylesheet" type="text/css" href="colleges.css"> 
+<title>Bay Area Colleges and Universities</title>
+</head>
+<body>
+    <h1>Bay Area Colleges and Universities</h1>
+    <div class="container">
+        <table id="results-table">
+        <thead>
+            <tr><th>Name</th><th>SAT High</th><th>SAT Low</th><th>Tuition</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+
+        <div class="form-container form-background-white">
+            <table>
+                <tr><th>Search Criteria</th></tr>
+                <tr>
+                <td>
+                <form>
+                    <div class="radio-group">
+                    <label>
+                    <input type="radio" name="publicprivate" value="public" id="public">
+                    Public
+                    </label>
+
+                    <label>
+                    <input type="radio" name="publicprivate" value="private" id="private">
+                    Private
+                    </label>
+
+                    <label>
+                    <input type="radio" name="publicprivate" value="Don't Care" id="dontcare" checked>
+                    Don't Care
+                    </label>
+                    </div>
+
+                    <div class="parameters">
+                    <div class="input-wrapper">
+                        <label for="maxtuition">Maximum Tuition</label>
+                        <input type="text" name="maxtuition" id="maxtuition">
+                    </div>
+                    <span class="secondary-label">Leave blank if don't care</span>
+                    </div>
+
+                    <div class="parameters">
+                    <div class="input-wrapper">
+                        <label for="maxsat">Maximum High SAT</label>
+                        <input type="text" name="maxsat" id="maxsat">
+                    </div>
+                    <span class="secondary-label">Leave blank if don't care</span>
+                    </div>
+
+                    <div class="parameters">
+                    <div class="input-wrapper">
+                        <label for="minsat">Minimum Low SAT</label>
+                        <input type="text" name="minsat" id="minsat">
+                    </div>
+                    <span class="secondary-label">Leave blank if don't care</span>
+                    </div>
+
+                </form>
+                </td>
+                </tr>
+            </table>
+            <input type="button" value="Update" id="filterbutton">
+        </div>
+    </div>
+</body>
+</html>
